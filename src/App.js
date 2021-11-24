@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {BrowserRouter as Router, Navigate, Redirect, Route, Routes} from 'react-router-dom'
+import {ViewPokemons} from "./pages";
+// import {useRoutes} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+// const App = () => {
+//   const routing = useRoutes();
+//
+//   return (
+//     <>
+//       {routing}
+//     </>
+//   );
+// }
+
+const App = () => (
+
+    // <Routes>
+        <ViewPokemons exact path='/home'/>
+        // {/*<Route path='' element={<Navigate replace to="/home"/>}/>*/}
+    // {/*</Routes>*/}
+    // <Routes>
+    //     {/*<Route path='*' element={<Navigate replace to="/"/>}/>*/}
+    //     <Route path='home' element={<ViewPokemons/> }/>
+    // </Routes>
+)
 
 export default App;

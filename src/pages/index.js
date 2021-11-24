@@ -1,1 +1,1 @@
-export * from './ViewPocemons'
+export * from './ViewPokemons'
